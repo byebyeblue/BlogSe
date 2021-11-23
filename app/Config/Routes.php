@@ -34,21 +34,19 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'BlogsController::home');
-$routes->get('/about', function(){
-    $data = [
-        'title' => "BlogSe - About",
-    ];
-    echo view('layouts/header', $data);
-    //echo view('layouts/navbar');
-    echo view('v_about');
-    echo view('layouts/footer');
-});
 $routes->get('/blogs', 'BlogsController::index');
+$routes->get('/about', 'BlogsController::about');
+$routes->get('/profile', 'UserController::index');
+
 $routes->get('/blogs/tambahblog', 'BlogsController::tambahblog');
 $routes->get('/blogs/hapus/(:any)', 'BlogsController::hapus/$1'); //$1 untuk nampung parameter any
 $routes->get('/blogs/editblog/(:any)', 'BlogsController::editblog/$1');
 $routes->post('/blogs/posting', 'BlogsController::posting');
-$routes->post('/blogs/updateblog', 'BlogsController::updateblog');
+$routes->post('/blogs/updateblog/(:any)', 'BlogsController::updateblog/$1');
+
+$routes->get('/register', 'UserController::register');
+$routes->post('/saveRegister', 'UserController::saveRegister');
+$routes->get('/login', 'UserController::login');
 
 /*
  * --------------------------------------------------------------------

@@ -1,7 +1,10 @@
+<?= $this->extend('/layouts/template'); ?>
+<?= $this->section('content'); ?>
+
 <div class="container">
     <h1 class="text-center">Selamat Datang di BlogSe</h1>
     <hr><br>
-    <table class="table-hover" cellpadding="8" cellspacing="0">
+    <table class="table-hover" width="1000px" cellpadding="8" cellspacing="0">
         <thead>
             <th>Judul</th>
             <th>Isi</th>
@@ -35,3 +38,5 @@
         </tbody>
     </table>
 </div>
+
+<?= $this->endSection(); ?>

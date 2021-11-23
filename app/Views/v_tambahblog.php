@@ -1,15 +1,22 @@
+<?= $this->extend('/layouts/template'); ?>
+<?= $this->section('content'); ?>
+
+
 <div class="container">
 	<h1>Posting Blog</h1>
 	<hr><br>
 	<form action="/blogs/posting" method="post">
-	<div class="row">
-		<div class="col-9">
-			<input type="text" class="form-control" name="judul" placeholder="Judul"><br>
-			<input type="text" class="form-control" name="slug" placeholder="Slug"><br>
-			<textarea rows="8" cols="109" type="text" name="isi" autocomplete="off" placeholder="Isi" maxlength="3000"></textarea>
+		<div class="row">
+			<div class="col-9">
+				<input type="text" class="form-control" name="judul" placeholder="Judul"><br>
+				<input type="text" class="form-control" name="slug" placeholder="Slug"><br>
+				<textarea rows="8" cols="109" type="text" name="isi" autocomplete="off" placeholder="Isi" maxlength="3000"></textarea>
+
+			</div>
 		</div>
-	</div>
-		
-		<br><input type="submit" value="Submit">
+
+		<br><input type="submit" class="btn" value="Submit">
 	</form>
 </div>
+
+<?= $this->endSection(); ?>
