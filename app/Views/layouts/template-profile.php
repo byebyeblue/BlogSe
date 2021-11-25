@@ -31,10 +31,24 @@
 </head>
 
 <body>
+    <div class="header-top">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-6 d-flex">
+                    <a href="index.html" class="site-logo">
+                        BlogSe
+                    </a>
+
+                    <a href="#" class="ml-auto d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a>
+
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Pre-loader end -->
     <section class="login-block">
         <!-- Container-fluid starts -->
-        <div class="container-fluid centered" style="width:500px;">
+        <div class="container-fluid" style="width:500px;">
             <div class="row justify-content-center">
                 <div class="col-sm-12 mt-20">
                     <form class="md-float-material form-material">
@@ -54,9 +68,9 @@
                     <div class="copyright">
                         <p>
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            Copyright &copy;<script>
+                            Copyright ©<script>
                                 document.write(new Date().getFullYear());
-                            </script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                            </script>2021 All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </p>
                     </div>
@@ -64,7 +78,6 @@
             </div>
         </div>
     </div>
-
 
     </div>
     <!-- .site-wrap -->

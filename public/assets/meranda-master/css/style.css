@@ -45,7 +45,7 @@ h5,
 
 /* Addition */
 .centered {
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   /* bring your own prefixes */
@@ -65,6 +65,14 @@ h5,
   margin-bottom: 30px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+
+.card-header {
+  padding: 0.75rem 1.25rem;
+  margin-top: 5px;
+  margin-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.03);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
 
 .card .card-block {
@@ -1869,12 +1877,6 @@ h5,
   font-size: .85rem;
   text-align: center;
   padding: 2rem 0;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 100px;
-  width: 100%;
-  overflow: hidden;
 }
 
 .top-social a {

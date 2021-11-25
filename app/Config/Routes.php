@@ -36,7 +36,7 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'BlogsController::home');
 $routes->get('/blogs', 'BlogsController::index');
 $routes->get('/about', 'BlogsController::about');
-$routes->get('/profile', 'UserController::index');
+$routes->get('/profile', 'BlogsController::profile');
 
 $routes->get('/blogs/tambahblog', 'BlogsController::tambahblog');
 $routes->get('/blogs/hapus/(:any)', 'BlogsController::hapus/$1'); //$1 untuk nampung parameter any
@@ -44,9 +44,10 @@ $routes->get('/blogs/editblog/(:any)', 'BlogsController::editblog/$1');
 $routes->post('/blogs/posting', 'BlogsController::posting');
 $routes->post('/blogs/updateblog/(:any)', 'BlogsController::updateblog/$1');
 
-$routes->get('/register', 'UserController::register');
-$routes->post('/saveRegister', 'UserController::saveRegister');
-$routes->get('/login', 'UserController::login');
+// $routes->get('/register', 'UserController::register');
+// $routes->post('/saveRegister', 'UserController::saveRegister');
+// $routes->get('/login', 'UserController::login');
+
 
 /*
  * --------------------------------------------------------------------

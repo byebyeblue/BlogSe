@@ -44,6 +44,15 @@ class BlogsController extends BaseController
         return view('v_about', $data);
     }
 
+    public function profile()
+    {   //untuk menampilkan form tambah blog
+        $data = [
+            'title' => "Proflie"
+        ];
+
+        return view('v_profile', $data);
+    }
+
     public function tambahblog()
     {   //untuk menampilkan form tambah blog
         $data = [
